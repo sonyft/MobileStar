@@ -20,7 +20,7 @@ if ($_SESSION['login']!="TRUE"){
 		<?php
 		if($search_camera = $_POST['Camera'])
 		{
-		//connect to Db
+		//connect to DataBase
 		include 'dbcon.php';
 		$sql = "SELECT * FROM mobile WHERE Camera='$search_camera' AND del_rec = 0";
 		//del_rec=0 
@@ -43,7 +43,7 @@ if ($_SESSION['login']!="TRUE"){
 		else 
 		if($search_cpu = $_POST['CPU'])
 		{
-			//connect to Db
+			//connect to DataBase
 			include 'dbcon.php';
 			$sql = "SELECT * FROM mobile WHERE CPU='$search_cpu' AND del_rec = 0";
 			//del_rec=0 
@@ -68,7 +68,7 @@ if ($_SESSION['login']!="TRUE"){
 		else 
 		if($search_ram = $_POST['RAM'])
 		{
-			//connect to Db
+			//connect to DataBase
 			include 'dbcon.php';
 			$sql = "SELECT * FROM mobile WHERE RAM='$search_ram' AND del_rec = 0";
 			//del_rec=0 
@@ -95,7 +95,7 @@ if ($_SESSION['login']!="TRUE"){
 			else 
 			if($search_os = $_POST['OS'])
 				{
-					//connect to Db
+					//connect to DataBase
 					include 'dbcon.php';
 					$sql = "SELECT * FROM mobile WHERE OS='$search_os' AND del_rec = 0";
 					//del_rec=0 

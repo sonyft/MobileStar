@@ -19,8 +19,8 @@ if ($_SESSION['login']!="TRUE"){
 <hr>
 <br>
 <?php
-//for database
-include 'dbcon.php';//connect to Db
+//for DataBase
+include 'dbcon.php';//connect to DataBase
 //shows all rows
 $rec_uid=$_SESSION['userid'];
 $sql = "SELECT * FROM mobile WHERE del_rec = 0 and rec_uid = $rec_uid";

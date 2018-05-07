@@ -43,7 +43,7 @@ $username="root";
 $password="";
 $dbname="mobiledb";
 
-include 'dbcon.php';//connect to Db
+include 'dbcon.php';//connect to DataBase
 
 if (isset($_POST['username'])|isset($_POST['passw'])){
 	$usern=$_POST['username'];

@@ -19,7 +19,7 @@ if ($_SESSION['login']!="TRUE"){
 	<div class="con1" style="margin-left: 12%;">
 		<center><h5>Android</h5></center><hr>
 		<?php
-		include 'dbcon.php';//connect to Db
+		include 'dbcon.php';//connect to DataBase
 		$sql = "SELECT * FROM mobile WHERE OS = 'Android' AND del_rec = 0 ORDER BY Brand";
 		include 'sortcat.php';?>	
 	</div>
