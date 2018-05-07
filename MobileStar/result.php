@@ -17,14 +17,14 @@ if ($_SESSION['login']!="TRUE"){
 	<?php include 'menu.php';?>
 	<div class="content">
 		<?php
-		//connect to DataBase
+		//connect to Db
 		include 'dbcon.php';
 		$id=$_GET["id"];
 		$img_id=$_GET["img_id"];
 		$sql = "SELECT * FROM mobile WHERE aa LIKE $id";
 		$result = $conn->query($sql);
 		$row = $result->fetch_assoc();//
-		$rec_uid=$row["rec_uid"];//from DataBase
+		$rec_uid=$row["rec_uid"];//from db
 		?>
 		<div class="font">
 			<center><h2><?php echo $row["Brand"];?></h2></center>
@@ -33,9 +33,9 @@ if ($_SESSION['login']!="TRUE"){
 			<img src="uploads/<?php echo $img_id?>" alt="no image" style="margin-top:42px;margin-left:12px; width:320px;height:200px;vertical-align: middle;">
 		</div>
 		<div class="con2" >
-			<h5>Спецификации:</h5>
+			<h5 style="color: white;">Спецификации:</h5>
 			<hr>
-			<br><h6>Камера:
+			<br><h6 >Камера:
 			<?php echo $row["Camera"]; ?></h6>
 			<br><h6>CPU:
 			<?php echo $row["CPU"]; ?></h6>

@@ -8,7 +8,7 @@
   		<li><a href="searchview.php">Търси</a></li>
 
 		</ul>	
-		<div class="welcome" style="float:right;margin-right:20px; font-size: 20px;">
+		<div class="welcome" style="float:right;margin-right:20px; font-size: 20px; color: blue;">
 	<?php 
 	if (isset($_SESSION['firstn'])){
 	?>Здравейте, <?php echo $_SESSION['firstn'] ." ". $_SESSION['lastn'];

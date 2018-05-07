@@ -17,14 +17,14 @@ if ($_SESSION['login']!="TRUE"){
 	<?php include 'menu.php';?>	
 	<br>	
 	<div class="con1" style="margin-left: 12%;">
-		<center><h5>Android</h5></center><hr>
+		<center><h5 style="color: white;">Android</h5></center><hr>
 		<?php
-		include 'dbcon.php';//connect to DataBase
+		include 'dbcon.php';//connect to Db
 		$sql = "SELECT * FROM mobile WHERE OS = 'Android' AND del_rec = 0 ORDER BY Brand";
 		include 'sortcat.php';?>	
 	</div>
 	<div class="con1">
-		<center><h5>iOS</h5></center><hr>
+		<center><h5 style="color: white;">iOS</h5></center><hr>
 		<?php
 		include 'dbcon.php';
 		$sql = "SELECT * FROM mobile WHERE OS = 'iOS' AND del_rec = 0 ORDER BY Brand";

@@ -15,7 +15,7 @@
 		}//end if
 		else {
 		?>
-		<center>0 Телефони.</center>
+		<center style="color: white;">0 Телефони.</center>
 		<?php
 		}
 		$conn->close();

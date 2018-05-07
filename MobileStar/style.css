@@ -1,6 +1,7 @@
 ﻿		body {
   			font-family: Arial;
-  			background-color: white;
+			  background-color: rgb(167, 0, 167);
+			  background-image: url("background.png");
   			margin:0; 
 		}		
 		input[type="text"], input[type=password] {
@@ -89,8 +90,8 @@
 		}
 		.content{
 			width: 800px;
-			background-color: white;
-			margin: auto;
+			margin-top: 200px;
+			margin-left:240px;
 			float: center;
 		}
 		.centerText{
@@ -99,11 +100,14 @@
 		/*con1 con2 Για addrecipe divs*/
 		.con1{
 			width:350px;
+			
 			margin-right: 10px;
 			float: left;
 			margin-bottom: 1px;		 
 		}
+	
 		.con2{
+			
 			width:300px;
 			margin: 10px;
 			float: left;
@@ -125,7 +129,7 @@
     		margin:auto;
     		padding:0;
     		text-align:center;				
-    		background-color:#62a5a1;		
+    		background-color:rgb(0,20,39);		
     		width: 100%;
     		font-size: 150%;
     		background-image: url("img/b2.png");
@@ -152,3 +156,10 @@
 			width:42px;
 			height:42px;
 		}
+
+
+		/* foter */
+
+		
+
+		

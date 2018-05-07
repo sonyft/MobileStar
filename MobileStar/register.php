@@ -9,6 +9,8 @@
 <div class="main">
 	<?php include 'menu.php';?>
 	<div class="content">
+	<span style="margin-left: 200px;  text-shadow: 3px 2px blue; " ><h1>Регистрирай се!</h1></span><br><br>
+
 	<form action="regdb.php" method="post">
 		<label for="firstn">Име:</label>
 		<input type="text" name="firstn" required><br>

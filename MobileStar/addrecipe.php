@@ -37,18 +37,18 @@ if ($_SESSION['login']!="TRUE"){
 <div class="main">
 	<?php include 'menu.php';?>
 	<form action="addDB.php" method="post" enctype="multipart/form-data">
-	<div class="content  ">
-		<br><h3><center>Добави телефон</center></h3><br><hr><br>
-		<h4>Модел: <input type="text" name="name" required></h4><br><br>
-		<h4>Категория:
+	<div class="content" style="margin-botton: 200px;">
+		<br><h3 style="color: white;"><center>Добави телефон</center></h3><br><hr><br>
+		<h4 style="color: white;">Модел: <input type="text" name="name" required></h4><br><br>
+		<h4 style="color: white;">Категория:
 		<select name="category" required>
-  			<option value="">Избери...</option>
-  			<option value="Android">Android</option>
-  			<option value="iOS">iOS</option>
+  			<option value="" style="color: white;">Избери...</option>
+  			<option value="Android" style="color: blue;" >Android</option>
+  			<option value="iOS" style="color: blue;" >iOS</option>
   			
 		</select>
-		<div class="  con1"><br>
-			Информация:
+		<div class="con1" style="color: white;"><br>
+			<h4 style="color: white;"> Информация:</h4>
 		​	<textarea id="steps" rows="20" cols="50" name="instr" fixed required></textarea><br>
 			<input type="file" name="image">
 			<input type="submit" value="Save">
@@ -69,7 +69,12 @@ if ($_SESSION['login']!="TRUE"){
 			</div>
 		</div>
 	</div>
+	
 	</form>
+
+	
 </div>
+
+
 <body>
 </html>

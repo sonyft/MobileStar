@@ -17,7 +17,7 @@ if ($_SESSION['login']!="TRUE"){
 		<?php include 'menu.php';?>
 		<form action="search.php" method="post">
 			<div class="content centerText">
-				<br><h3>Търсене по параметри</h3><br><br><hr><br>
+				<br><h3 style="color: white;">Търсене по параметри</h3><br><br><hr><br>
 				<input type="text" name="Camera" placeholder="Camera"><br>
 				<input type="text" name="CPU" placeholder="CPU"><br>
 				<input type="text" name="RAM" placeholder="RAM"><br>

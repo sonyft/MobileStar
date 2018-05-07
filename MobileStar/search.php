@@ -16,11 +16,11 @@ if ($_SESSION['login']!="TRUE"){
 <div class="clearfix main">
 	<?php include 'menu.php';?>
 	<div class="content ">
-		<br><h3><center>Резултати от търсенето</center></h3><br><hr>
+		<br><h3 style="color: white;"><center>Резултати от търсенето</center></h3><br><hr>
 		<?php
 		if($search_camera = $_POST['Camera'])
 		{
-		//connect to DataBase
+		//connect to Db
 		include 'dbcon.php';
 		$sql = "SELECT * FROM mobile WHERE Camera='$search_camera' AND del_rec = 0";
 		//del_rec=0 
@@ -43,7 +43,7 @@ if ($_SESSION['login']!="TRUE"){
 		else 
 		if($search_cpu = $_POST['CPU'])
 		{
-			//connect to DataBase
+			//connect to Db
 			include 'dbcon.php';
 			$sql = "SELECT * FROM mobile WHERE CPU='$search_cpu' AND del_rec = 0";
 			//del_rec=0 
@@ -68,7 +68,7 @@ if ($_SESSION['login']!="TRUE"){
 		else 
 		if($search_ram = $_POST['RAM'])
 		{
-			//connect to DataBase
+			//connect to Db
 			include 'dbcon.php';
 			$sql = "SELECT * FROM mobile WHERE RAM='$search_ram' AND del_rec = 0";
 			//del_rec=0 
@@ -95,7 +95,7 @@ if ($_SESSION['login']!="TRUE"){
 			else 
 			if($search_os = $_POST['OS'])
 				{
-					//connect to DataBase
+					//connect to Db
 					include 'dbcon.php';
 					$sql = "SELECT * FROM mobile WHERE OS='$search_os' AND del_rec = 0";
 					//del_rec=0 

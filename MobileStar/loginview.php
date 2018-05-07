@@ -13,10 +13,11 @@ session_start();
 <body>
 <div class="main" style="height: 100px;">
 	<?php include 'menu.php';?>
-	<span style="margin-left: 46%;"><h3>Влез:</h3></span><br><br>
 	<div class="content">
+	<span style="margin-left: 200px;  text-shadow: 3px 2px blue; " ><h1>Влез:</h1></span><br><br>
 
 	<form action="loginview.php" method="post">
+	
 		<h4>
 		<label for=username>Потребителско име:</label>
 		<input type="text" name="username"><br>
@@ -43,7 +44,7 @@ $username="root";
 $password="";
 $dbname="mobiledb";
 
-include 'dbcon.php';//connect to DataBase
+include 'dbcon.php';//connect to Db
 
 if (isset($_POST['username'])|isset($_POST['passw'])){
 	$usern=$_POST['username'];

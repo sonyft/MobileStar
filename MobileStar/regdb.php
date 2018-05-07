@@ -14,7 +14,7 @@ $lastn = $_POST['lastn'];
 $email = $_POST['email'];
 $usern = $_POST['username'];
 $passw = $_POST['passw'];
-include 'dbcon.php';//connect to DataBase
+include 'dbcon.php';//connect to Db
 $sql = "INSERT INTO users (firstn, lastn, email, username, passw)
 VALUES ('$firstn', '$lastn', '$email', '$usern', '$passw')";
 if ($conn->query($sql) == TRUE) {
